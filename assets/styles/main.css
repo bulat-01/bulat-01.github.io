@@ -1,0 +1,54 @@
+header {
+    width:100%;
+    margin-bottom: 165px;
+    font-family: "Roboto Condensed", sans-serif;
+}
+
+.header__container {
+   display:flex;
+   min-height: 105px;
+   align-items: center;
+   
+
+}
+
+.menu {
+    margin: 0 225px 0 358px;
+}
+
+.menu__item {
+    font-size:14px;
+    color:inherit;
+    letter-spacing: 0.15em;
+    text-transform: uppercase;
+    
+}
+
+.menu__item:not(:last-child) {
+    margin-right: 30px;
+}
+
+.tel {
+    position:relative;
+    height: 30px;
+    padding-right: 30px;
+}
+
+  
+.tel__number {
+    font-size: 18px;
+    font-weight: 500px;
+    color: inherit;
+  
+}
+
+.tel__number::before {
+    content: '';
+    position: absolute;
+    background: url(../images/icon-phon/icon_phon.png) 0 0 no-repeat;
+    top: -3px;
+    left:-35px;
+    width: 30px;
+    height: 30px;
+    
+}
