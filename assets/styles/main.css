@@ -1,54 +1,102 @@
-header {
-    width:100%;
-    margin-bottom: 165px;
-    font-family: "Roboto Condensed", sans-serif;
+.container {
+    position: relative;
+    z-index: 50;
+    max-width: 1200px;
+    margin: 0px auto;
+  
+    
 }
 
-.header__container {
+.header {
+    width:100%;
+    font-family: "Roboto Condensed", sans-serif;
+   
+}
+
+.header__content {
    display:flex;
    min-height: 105px;
    align-items: center;
+   justify-content: space-between;
+   padding: 0 30px;
+   width: 100%;
+}
+
+.navigation {
    
-
 }
 
-.menu {
-    margin: 0 225px 0 358px;
-}
-
-.menu__item {
+.navigation__item {
     font-size:14px;
     color:inherit;
     letter-spacing: 0.15em;
     text-transform: uppercase;
-    
+    text-decoration: unset;
 }
 
-.menu__item:not(:last-child) {
+.navigation__item:not(:last-child) {
     margin-right: 30px;
+}
+
+.header__right {
+    display:flex;
 }
 
 .tel {
     position:relative;
     height: 30px;
-    padding-right: 30px;
+    display: flex;
+    gap: 5px;
+    align-items: center;
 }
-
   
 .tel__number {
     font-size: 18px;
-    font-weight: 500px;
+    font-weight: 500;
     color: inherit;
+    text-decoration: unset;
   
 }
 
-.tel__number::before {
-    content: '';
-    position: absolute;
-    background: url(../images/icon-phon/icon_phon.png) 0 0 no-repeat;
-    top: -3px;
-    left:-35px;
-    width: 30px;
-    height: 30px;
+.menu {
+    display: none;
+    flex-direction: column;
+    gap: 10px;
+    margin-left: 80px;
+}
+
+.menu__line {
+    width: 40px;
+    border: 2px solid #fff;
+
+}
+
+@media (max-width:1024px) {
+    .menu {
+        display:flex;
+    }
+    .navigation {
+        display: none;
+    }
+}
+
+@media (max-width:664px) {
+    
+    .header__content {
+        min-height: 70px;
+        padding: 0 15px;
+    }
+    .logo img {
+        width: 30px;
+        height: 30px;
+    }
+    .tel__image img {
+        width: 21px;
+        height: 21px;
+    }
+    .tel__number {
+        font-size: 12px;
+    } 
+    
     
 }
