@@ -71,7 +71,7 @@
 
 }
 
-@media (max-width:1024px) {
+@media (max-width:768px) {
     .menu {
         display:flex;
     }
@@ -80,7 +80,13 @@
     }
 }
 
-@media (max-width:664px) {
+@media (max-width:720px) {
+    .menu {
+        margin-left: 29px;
+    }
+}
+
+@media (max-width:428px) {
     
     .header__content {
         min-height: 70px;
