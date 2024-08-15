@@ -3,7 +3,7 @@
     z-index: 50;
     max-width: 1200px;
     margin: 0px auto;
-  
+    
     
 }
 
@@ -72,37 +72,43 @@
 }
 
 @media (max-width:768px) {
+
     .menu {
         display:flex;
     }
+
     .navigation {
         display: none;
     }
+
 }
 
 @media (max-width:720px) {
+
     .menu {
         margin-left: 29px;
     }
+    
 }
 
 @media (max-width:428px) {
-    
+
     .header__content {
         min-height: 70px;
         padding: 0 15px;
     }
+
     .logo img {
         width: 30px;
         height: 30px;
     }
+
     .tel__image img {
         width: 21px;
         height: 21px;
     }
+
     .tel__number {
         font-size: 12px;
     } 
-    
-    
 }
