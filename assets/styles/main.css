@@ -3,14 +3,11 @@
     z-index: 50;
     max-width: 1200px;
     margin: 0px auto;
-    
-    
 }
 
 .header {
     width:100%;
     font-family: "Roboto Condensed", sans-serif;
-   
 }
 
 .header__content {
@@ -20,10 +17,6 @@
    justify-content: space-between;
    padding: 0 30px;
    width: 100%;
-}
-
-.navigation {
-   
 }
 
 .navigation__item {
@@ -55,7 +48,6 @@
     font-weight: 500;
     color: inherit;
     text-decoration: unset;
-  
 }
 
 .menu {
@@ -68,11 +60,9 @@
 .menu__line {
     width: 40px;
     border: 2px solid #fff;
-
 }
 
 @media (max-width:768px) {
-
     .menu {
         display:flex;
     }
@@ -80,19 +70,15 @@
     .navigation {
         display: none;
     }
-
 }
 
 @media (max-width:720px) {
-
     .menu {
         margin-left: 29px;
     }
-    
 }
 
 @media (max-width:428px) {
-
     .header__content {
         min-height: 70px;
         padding: 0 15px;
