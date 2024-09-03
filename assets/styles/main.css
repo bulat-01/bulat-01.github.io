@@ -71,6 +71,41 @@
     text-transform: uppercase;
 }
 
+.footer {
+    display: flex;
+    justify-content: center;
+    background-color: #F7F7F7;
+    margin-top: 130px;
+}
+
+.footer__body {
+    max-width: 213;
+    height: 61;;
+    margin: 95px 0;
+}
+
+.footer__social {
+    display: flex;
+    justify-content: center;
+    column-gap: 30px;
+    font-family: "Roboto Condensed", sans-serif;
+    color: #3D3D3D;
+    line-height: 16.41px;
+    letter-spacing: 0.15em;
+    text-transform: uppercase;
+}
+
+.footer__link {
+    color: #3D3D3D;
+    text-decoration: unset;
+}
+
+.footer__copyright {
+    font-family: "Roboto", sans-serif;
+    margin-top: 30px;
+    color: #878787;
+}
+
 @media (max-width:768px) {
     .menu {
         display:flex;
@@ -78,6 +113,13 @@
 
     .navigation {
         display: none;
+    }
+
+    .footer {
+        display: flex;
+        justify-content: center;
+        background-color: #F7F7F7;
+        margin-top: 100px;
     }
 }
 
@@ -121,5 +163,9 @@
 
     .h2 {
         font-size: 30px;
+    }
+
+    .footer {
+        margin-top: 70px;
     }
 }
