@@ -4,11 +4,163 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Document</title>
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Roboto+Condensed:ital,wght@0,100..900;1,100..900&family=Roboto:wght@300;400&display=swap" rel="stylesheet">    
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Roboto:wght@300;500&display=swap" rel="stylesheet">
     <link rel="stylesheet" href="/assets/styles/main.css">
     <link rel="stylesheet" href="/assets/styles/portfolio.css">
     <link rel="stylesheet" href="/assets/styles/reset.css">
 </head>
-<body>
-    
+<body class="body">
+    <header class="header">
+        <div class="container">
+            <div class="header__content">
+                <div class="logo">
+                    <a href=""> <img src="/assets/images/logos/logo_b.png" alt=""></a>
+                </div>
+
+                <nav class="navigation">
+                    <a class="navigation__item" href="">Портфолио</a>
+                    <a class="navigation__item" href="">услуги и цены<a>
+                    <a class="navigation__item" href="">контакты</a>
+                </nav>
+
+                <div class="header__right">
+                    <div class="tel">
+                        <div class="tel__image">
+                            <a href=""><img src="/assets/images/icons-phon/icon_phon_black.png" alt=""></a>
+                        </div>
+
+                        <a href class="tel__number">+7 918 412-34-43</a>
+                    </div>
+
+                    <div class="menu">
+                        <div class="menu__line"></div>
+                        <div class="menu__line"></div>
+                        <div class="menu__line"></div>
+                    </div>
+                </div>     
+            </div>
+        </div>
+    </header>
+
+    <main class="main">
+        <div class="container">
+            <section class="portfolio">
+                <div class="portfolio__title h2">
+                    <h2>Портфолио</h2>
+                </div>
+                <div class="portfolio__tabs tabs">
+                   <div class="tabs__items">
+                       <a href="" class="tabs__tab tabs__tab_active">все работы<span>29</span></a>
+                       <a href="" class="tabs__tab">квартиры<span>18</span></a>
+                       <a href="" class="tabs__tab">дома<span>12</span></a>
+                       <a href="" class="tabs__tab">коммерческие помещения<span>2</span></a>
+                   </div>
+                    <div class="tabs__line">
+                        <div class="tabs__black-line"></div>
+                    </div>
+                </div>
+                <div class="portfolio__list list">
+                    <div class="list__item item-1x2">
+                        <img src="/assets/images/home_page_images/portfolio_images/picture1.png" alt="">
+                        <div class="overlay">
+                           <p>loft</p>
+                           <p>Unique collection</p>
+                        </div>
+                    </div>
+                    <div class="list__item">
+                        <img src="/assets/images/home_page_images/portfolio_images/picture2.png" alt="">
+                        <div class="overlay">
+                            <p>Название в две строки</p>
+                            <p>Unique collection</p>
+                         </div>
+                    </div>
+                    <div class="list__item">
+                        <img src="/assets/images/home_page_images/portfolio_images/picture3.png" alt="">
+                        <div class="overlay">
+                            <p>Название в две строки</p>
+                            <p>Unique collection</p>
+                         </div>
+                    </div>
+                    <div class="list__item">
+                        <img src="/assets/images/home_page_images/portfolio_images/picture4.png" alt="">
+                        <div class="overlay">
+                            <p>Название в две строки</p>
+                            <p>Unique collection</p>
+                         </div>
+                    </div>
+                    <div class="list__item">
+                        <img src="/assets/images/home_page_images/portfolio_images/picture5.png" alt="">
+                        <div class="overlay">
+                            <p>Название в две строки</p>
+                            <p>Unique collection</p>
+                         </div>
+                    </div>
+                    <div class="list__item item-2x2">
+                        <img src="/assets/images/home_page_images/portfolio_images/picture6.png" alt="">
+                        <div class="overlay">
+                            <p>Название в две строки</p>
+                            <p>Unique collection</p>
+                         </div>
+                    </div>
+                    <div class="list__item item-2x1">
+                        <img src="/assets/images/home_page_images/portfolio_images/picture7.png" alt="">
+                        <div class="overlay">
+                            <p>Название в две строки</p>
+                            <p>Unique collection</p>
+                         </div>
+                    </div>
+                    <div class="list__item">
+                        <img src="/assets/images/home_page_images/portfolio_images/picture8.png" alt="">
+                        <div class="overlay">
+                            <p>Название в две строки</p>
+                            <p>Unique collection</p>
+                         </div>
+                    </div>
+                    <div class="list__item">
+                        <img src="/assets/images/home_page_images/portfolio_images/picture9.png" alt="">
+                        <div class="overlay">
+                            <p>Название в две строки</p>
+                            <p>Unique collection</p>
+                         </div>
+                    </div>
+                    <div class="list__item item-2x1">
+                        <img src="/assets/images/home_page_images/portfolio_images/picture10.png" alt="">
+                        <div class="overlay">
+                            <p>Название в две строки</p>
+                            <p>Unique collection</p>
+                         </div>
+                    </div>
+                </div>
+                <button class="portfolio__button">Показать еще работы</button>
+            </section>
+
+            <div class="application">
+                <button class="application__button">
+                    <span class="application__text">оставить заявку на проект</span>
+                    <span class="application__arrow"><img src="/assets/images/icon-arrow/akar-icons_arrow-up-right.png" alt=""></span> 
+                </button>
+            </div>
+        </div>
+    </main>
+
+    <footer class="footer">
+        <div class="footer__body">
+            <div class="footer__social">
+                <a href="" class="footer__link">houzz</a>
+
+                <div class="text">
+                    instagram
+                </div>
+            </div>
+
+            <div class="footer__copyright">
+                © 2022 LA Design, all rights reserved.
+            </div>
+        </div>
+    </footer>
 </body>
 </html>

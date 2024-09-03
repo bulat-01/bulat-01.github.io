@@ -1,0 +1,335 @@
+.body {
+    font-size: 14px;
+    font-family: "Roboto Condensed", sans-serif;
+}
+
+.header {
+    border-bottom: 1px solid #D5D5D5;
+}
+
+.tel__number {
+    color: #777777;
+}
+
+.main {
+    margin-top: 100px;
+}
+
+.portfolio {
+    font-size: 140px;
+    text-align: center;
+    padding: 0 45px;
+}
+
+.portfolio__title {
+    color: #3D3D3D;
+}
+
+.portfolio__tabs {
+    max-width: 662px;
+    margin: 50px auto 40px auto;
+}
+
+.tabs__items {
+    max-width: 662px;
+    overflow: auto;
+    display: flex;
+    justify-content: space-between;
+    gap: 30px;
+    text-wrap: nowrap;
+    /* Скрываем scrollbar для IE, Edge и Firefox */
+    -ms-overflow-style: none;  /* IE и Edge */
+    scrollbar-width: none;  /* Firefox */
+}
+
+/* Скрываем scrollbar для Chrome, Safari и Opera */
+.tabs::-webkit-scrollbar {
+    display: none;
+}
+
+.tabs__tab {
+    font-weight: 400px;
+    font-size: 14px;
+    line-height: 117%;
+    color: #393246;
+    letter-spacing: 0.15em;
+    text-transform: uppercase;
+    text-decoration: unset;
+   
+}
+
+.tabs__tab span {
+    vertical-align: super;
+    margin-left: 5px;
+}
+
+.tabs__line {
+    position: relative;
+    width: 100%;
+    max-width: 100%;
+    margin-top: 10px;
+    border-bottom: 1px solid #D5D5D5;
+}
+
+.tabs__black-line {
+    position: absolute;
+    top: -1px;
+    left: 0;
+    width: 94px;
+    border-bottom: 2px solid #000000;
+}
+
+.portfolio__list {
+    display: grid;
+    max-height: 1198px;
+    max-width: 1198px;
+    grid-template-rows: repeat(4, calc((100% - 90px)/4));
+    grid-template-columns: repeat(4, calc((100% - 90px)/4));
+    gap: 30px;
+    margin: 0 auto -60px auto;
+}
+
+.list__item {
+    position: relative;
+    width: 100%;
+    height: 100%;
+}
+
+.list__item img {
+    width: 100%;
+    height: 100%;
+    max-height: 100%;
+}
+
+.overlay {
+    position: absolute;
+    top: 0;
+    left: 0;
+    z-index: 50;
+    width: 100%;
+    height: 100%;
+    font-family: inherit;
+    color: #FFFFFF;
+    font-size: 18px;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items:center;
+    row-gap: 10px;
+    line-height: 27px;
+    font-weight: 300;
+    opacity: 0;
+    padding: 0 10px;
+}
+
+.overlay p:first-child {
+    font-size: 20px;
+    letter-spacing: 0.12em;
+    text-transform: uppercase;
+}
+
+.overlay p:last-child {
+    font-size: 18px;
+}
+
+.overlay:hover {
+    opacity: 1;
+    background-color: rgba(0, 0, 0, 0.6);
+    
+}
+
+.item-1x2 {
+    grid-row: span 2;
+}
+
+.item-2x1 {
+    grid-column: span 2;
+}
+
+.item-2x2 {
+    grid-row: span 2;
+    grid-column: span 2;
+}
+
+.portfolio__button {
+    width: 290px;
+    height: 60px;
+    border: 1px solid #393246;
+    font-family: "Roboto Condensed", sans-serif;
+    background-color: #FFFFFF;
+    color: black;
+    letter-spacing: 0.15em;
+    text-transform: uppercase;
+    cursor: pointer;
+}
+
+.portfolio__button:hover {
+    background-color: #393246;
+    color: white;
+}
+
+.application {
+    max-width: 642px;
+    display: flex;
+    justify-content: center;
+    margin: 130px auto 0 auto;  
+}
+
+.application__button {
+    font-family: "Roboto Condensed", sans-serif;
+    background-color: #FFFFFF;
+    cursor: pointer;
+    border: 0;
+    border-bottom: 1px solid #D5D5D5;
+    padding-bottom: 6px;
+}
+
+.application__arrow {
+    position: relative;
+    display: inline-block;
+    margin-left: 2px;
+    top: -4px;
+}
+
+.application__text {
+    font-family: inherit;
+    font-size: 40px;
+    font-weight: 300;
+    color: #3D3D3D;
+    letter-spacing: 0.08em;
+    text-transform: uppercase;
+    line-height: 46.88px;
+}
+
+@media (max-width:1200px) {
+    .portfolio__list {
+        max-width: 1000px;
+        max-height: 1000px;
+    }
+}
+
+@media (max-width:1024px) {
+    .portfolio__list {
+        max-width: 930px;
+        margin-top: 50px;
+    }
+}
+
+
+@media (max-width:1000px) {
+    .main {
+        margin-top: 70px;
+    }
+
+    .portfolio__tabs {
+        margin: 30px auto;
+    }
+
+    .portfolio__list {
+        max-height: 2786px;
+        grid-template-rows: repeat(8, calc((100% - 210px)/8));
+        grid-template-columns: repeat(2, calc((100% - 30px)/2));
+    }
+
+    .list__item:nth-child(1){ order: 1; }
+    .list__item:nth-child(2){ order: 2; }
+    .list__item:nth-child(3){ order: 3; }
+    .list__item:nth-child(4){ order: 4; }
+    .list__item:nth-child(5){ order: 5; }
+    .list__item:nth-child(6){ order: 7; }
+    .list__item:nth-child(7){ order: 6; }
+    .list__item:nth-child(8){ order: 8; }
+    .list__item:nth-child(9){ order: 9; }
+    .list__item:nth-child(10){order: 10; }
+
+    .application {
+       margin-top: 100px;
+    }
+}
+
+@media (max-width:690px) {   
+    .application__arrow {
+        top: 3px;
+    }
+    
+    .application__text {
+       font-size: 30px;
+     }
+}
+
+@media (max-width:586px) {      
+    .main {
+        margin-top: 50px;
+    }
+
+    .portfolio {
+        padding: 0 12px;
+    }
+    
+    .portfolio__list {
+        display: flex;
+        flex-direction: column;
+        row-gap: 10px;
+    }
+   
+    .list__item:not(:nth-child(1)):not(:nth-child(7))  {
+        height: 350px;
+    }
+
+    .list__item:first-child {
+        height: 471px;
+    }
+
+    .list__item:nth-child(7) {
+        height: 250px;
+    }
+
+    .list__item:nth-child(8){ display: none; }
+    .list__item:nth-child(9){ display: none; }
+    .list__item:nth-child(10){display: none; }
+
+    .application__arrow {
+        top: 6px;
+    }
+
+    .application__text {
+        font-size: 25px;
+    }
+}
+
+@media (max-width:435px) {
+    .application {
+        margin-top: 70px;
+    }
+
+    .application__arrow {
+        margin-left: 5px ;
+        top: 4px;
+    }
+
+    .application__text {
+        font-size: 16px;
+        line-height: 18.75px;
+        letter-spacing: 0.12em;
+        vertical-align: super;
+    }
+}
+
+@media (max-width:325px) {
+    .list__item:not(:nth-child(1)):not(:nth-child(7))  {
+        height: 290px;
+    }
+
+    .list__item:first-child {
+        height: 471px;
+    }
+
+    .list__item:nth-child(7) {
+        height: 220px;
+    }
+
+    .list__item img{
+       width: 100%;
+       height: 100%;
+    }
+}

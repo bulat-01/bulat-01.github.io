@@ -6,8 +6,11 @@
 }
 
 .header {
+    position: relative;
     width:100%;
     font-family: "Roboto Condensed", sans-serif;
+    z-index: 50;
+    border-bottom: 1px solid #878787;
 }
 
 .header__content {
