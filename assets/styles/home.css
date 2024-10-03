@@ -37,14 +37,12 @@
     flex-direction: column;
     align-items: center;
     margin-top: 165px;
-    padding: 0 15px;
 }
 
 .lozung__title {
     font-size: 140px;
     font-weight: 300;
     letter-spacing: 0.08em;
-    text-align: center;
     text-transform: uppercase;
     line-height: 117%;
 }
@@ -61,11 +59,11 @@
 
 .main {
     margin-top: 150px;
+    padding: 0 45px;
 }
 
 .benefits {
     max-height: 625px;
-    padding: 0 45px;
 }
 
 .benefits__title  {
@@ -125,14 +123,12 @@
 }
 
 .portfolio {
-    font-size: 140px;
     margin-top: 109px;
-    text-align: center;
-    padding: 0 45px;
 }
 
 .portfolio__title {
     color: #3D3D3D;
+    text-align: center;
 }
 
 .portfolio__tabs {
@@ -195,8 +191,9 @@
     max-width: 1198px;
     grid-template-rows: repeat(4, calc((100% - 90px)/4));
     grid-template-columns: repeat(4, calc((100% - 90px)/4));
+    text-align: center;
     gap: 30px;
-    margin: 0 auto -60px auto;
+    margin: 0 auto 0 auto;
 }
 
 .list__item {
@@ -261,53 +258,30 @@
 }
 
 .portfolio__button {
+    display: flex;
+    justify-content: center;
+}
+
+.portfolio__button button {
     width: 290px;
     height: 60px;
     border: 1px solid #393246;
+    
     font-family: inherit;
     background-color: #FFFFFF;
     color: black;
     letter-spacing: 0.15em;
     text-transform: uppercase;
-    cursor: pointer;
+    margin-top: 40px;
 }
 
-.portfolio__button:hover {
+.portfolio__button button:hover {
     background-color: #393246;
     color: white;
 }
 
-.application {
-    max-width: 642px;
-    display: flex;
-    justify-content: center;
-    margin: 130px auto 0 auto;  
-}
-
-.application__button {
-    font-family: inherit;
-    background-color: #FFFFFF;
-    cursor: pointer;
-    border: 0;
-    border-bottom: 1px solid #D5D5D5;
-    padding-bottom: 6px;
-}
-
-.application__arrow {
-    position: relative;
-    display: inline-block;
-    margin-left: 2px;
-    top: -4px;
-}
-
-.application__text {
-    font-family: inherit;
-    font-size: 40px;
-    font-weight: 300;
-    color: #3D3D3D;
-    letter-spacing: 0.08em;
-    text-transform: uppercase;
-    line-height: 46.88px;
+.application-button, .footer {
+    margin-top: 130px;
 }
 
 @media (max-width:1200px) {
@@ -320,10 +294,6 @@
         width: 450px;
     }
     
-    .portfolio__list {
-        max-width: 1000px;
-        max-height: 1000px;
-    }
 }
 
 @media (max-width:1024px) {
@@ -350,7 +320,12 @@
 
     .portfolio__list {
         max-width: 930px;
+        max-height: 930px;
         margin-top: 50px;
+    }
+
+    .portfolio__tabs {
+        margin: 50px auto 40px auto;
     }
 }
 
@@ -422,8 +397,8 @@
     .list__item:nth-child(9){ order: 9; }
     .list__item:nth-child(10){order: 10; }
 
-    .application {
-       margin-top: 100px;
+    .application-button, .footer {
+        margin-top: 100px;
     }
 }
 
@@ -439,19 +414,11 @@
     .lozung__description {
         font-size: 16px;
     }
-
-    .application__arrow {
-        top: 3px;
-    }
-    
-    .application__text {
-       font-size: 30px;
-     }
 }
 
 @media (max-width:586px) {      
 
-    .portfolio {
+    .main {
         padding: 0 12px;
     }
     
@@ -476,24 +443,12 @@
     .list__item:nth-child(8){ display: none; }
     .list__item:nth-child(9){ display: none; }
     .list__item:nth-child(10){display: none; }
-
-    .application__arrow {
-        top: 6px;
-    }
-
-    .application__text {
-        font-size: 25px;
-    }
 }
 
 @media (max-width:476px) {
     .lozung__title {
         font-size: 80px;
      }
-
-    .benefits {
-        padding: 0 12px;
-    }
 }
 
 @media (max-width:435px) {
@@ -528,20 +483,8 @@
         height: 100%;
     }
 
-    .application {
+    .application-button, .footer {
         margin-top: 70px;
-    }
-
-    .application__arrow {
-        margin-left: 5px ;
-        top: 4px;
-    }
-
-    .application__text {
-        font-size: 16px;
-        line-height: 18.75px;
-        letter-spacing: 0.12em;
-        vertical-align: super;
     }
 }
 

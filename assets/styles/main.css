@@ -1,7 +1,7 @@
 .container {
     position: relative;
     z-index: 50;
-    max-width: 1290px;
+    max-width: 1200px;
     margin: 0px auto;
 }
 
@@ -9,8 +9,8 @@
     position: relative;
     width:100%;
     font-family: "Roboto Condensed", sans-serif;
-    z-index: 50;
-    border-bottom: 1px solid #878787;
+    z-index: 1;
+    border-bottom: 0.5px solid #878787;
 }
 
 .header__content {
@@ -65,20 +65,43 @@
     border: 2px solid #fff;
 }
 
-
 .h2 {
     font-size: 40px;
     font-weight: 300;
-    line-height: 117%;
     letter-spacing: 0.08em;
     text-transform: uppercase;
+    color: #3D3D3D;
+
+}
+
+.application-button {
+    display: flex;
+    margin: 0 auto;  
+    font-family: "Roboto Condensed", sans-serif;
+    background-color: #FFFFFF;
+    cursor: pointer;
+    border: 0;
+    border-bottom: 1px solid #D5D5D5;
+    padding-bottom: 6px;
+    text-wrap: nowrap;
+    height: 52px;
+    gap: 5px;
+}
+
+.application-arrow {
+    position: relative;
+    display: inline-block;
+    top: 4px;
+}
+
+.application-text {
+    color: #3D3D3D;
 }
 
 .footer {
     display: flex;
     justify-content: center;
     background-color: #F7F7F7;
-    margin-top: 130px;
 }
 
 .footer__body {
@@ -109,7 +132,7 @@
     color: #878787;
 }
 
-@media (max-width:768px) {
+@media (max-width:840px) {
     .menu {
         display:flex;
     }
@@ -117,16 +140,15 @@
     .navigation {
         display: none;
     }
+}
 
+@media (max-width:768px) {
     .footer {
         display: flex;
         justify-content: center;
         background-color: #F7F7F7;
-        margin-top: 100px;
     }
 }
-
-
 
 @media (max-width:768px) {
     .menu {
@@ -135,6 +157,21 @@
 
     .navigation {
         display: none;
+    }
+}
+
+
+@media (max-width:760px) {
+    .application-button {
+        height: 40px;
+    }
+
+    .application-text {
+        font-size: 30px;
+    }
+
+    .application-arrow {
+        top: 3px;
     }
 }
 
@@ -144,7 +181,16 @@
     }
 }
 
-@media (max-width:428px) {
+@media (max-width:586px) {
+    .application-text {
+        font-size: 25px;
+    }
+
+    .application-arrow {
+        top: 0;
+    }
+}
+@media (max-width:450px) {
     .header__content {
         min-height: 70px;
         padding: 0 15px;
@@ -167,8 +213,19 @@
     .h2 {
         font-size: 30px;
     }
-
-    .footer {
-        margin-top: 70px;
+    
+    .application-button {
+        height: 30px;
     }
+
+    .application-text {
+        font-size: 16px;
+        letter-spacing: 0.12em;
+        vertical-align: super;
+    }
+
+    .application-arrow {
+        top: -3px;
+    }
+
 }
