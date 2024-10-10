@@ -1,0 +1,146 @@
+.body {
+    font-size: 14px;
+    color:#FFFFFF;
+    font-family: "Roboto Condensed", sans-serif;
+}
+
+.background {
+    height: 800px;
+}
+
+.header {
+    border-bottom: 0.5px solid #F7F7F7;
+}
+
+.background__image {
+    position: absolute;
+    top: 0;
+    left:0;
+    background: no-repeat  left url('../images/404_page_images/picture\ \(2\).png');
+    background-position: 50% 0;
+    background-size: cover; 
+    width: 100%;
+    height: 800px;
+}
+
+.lozung {
+    position: relative;
+    z-index: 5;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    padding: 0 15px;
+    margin-top: 90px;
+}
+
+.lozung__title {
+    font-size: 150px;
+    font-weight: 300;
+    text-transform: uppercase;
+    line-height: 175.78px;
+    align-items: center;
+    margin-bottom: 10px;
+}
+
+.lozung__description {
+    text-align: center;
+}
+
+.lozung__description p:first-child {
+    font-size: 40px;
+    font-weight: 300;
+    text-transform: uppercase;
+    letter-spacing: 0.08em;
+    line-height: 46.88px;
+    margin-bottom: 15px;
+}
+
+.lozung__description p:last-child {
+    font-family: "Roboto", sans-serif;
+    font-size: 18px;
+    font-weight: 300;
+    line-height: 27px;
+    margin-bottom: 40px;
+}
+
+.lozung__button button{
+    background-color: #FFFFFF;
+    width: 290px;
+    height: 60px;
+    font-size: 14px;
+    text-transform: uppercase;
+    line-height: 16.41px;
+    letter-spacing: 0.15em;
+}
+
+@media (max-width:800px) {
+    .lozung {
+        margin-top: 92px;
+    }
+
+    .lozung__title {
+        margin-bottom: 15px;
+    }
+
+    .lozung__description p:first-child {
+        max-width: 460px;
+        margin-bottom: 20px;
+    }
+
+    .background {
+        height: 774px;
+    }
+
+    .background__image {
+        height: 774px;
+    }
+}
+
+@media (max-width:485px) {
+    .lozung__title {
+        margin-bottom: 5px;
+    }
+
+    .lozung__description p:first-child {
+        font-size: 30px;
+    }
+
+    .background {
+        height: 700px;
+    }
+
+    .background__image {
+        height: 700px;
+    }
+
+}
+
+@media (max-width:360px) {
+    .background {
+        height: 540px;
+    }
+
+    .background__image {
+        height: 540px;
+    }
+
+    .lozung {
+        margin-top: 44px;
+    }
+
+    .lozung__title {
+        font-size: 100px;
+        margin-bottom: 10px;
+        line-height: 117.19px;
+    }
+
+    .lozung__description p:first-child {
+        font-size: 20px;
+        line-height: 25px;
+    }
+
+    .lozung__description p:last-child {
+        font-size: 16px;
+        margin-bottom: 46px;
+    }
+}

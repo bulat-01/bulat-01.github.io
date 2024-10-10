@@ -70,14 +70,6 @@
     max-width: 1158px;
 }
 
-.title {
-    font-size: 30px;
-    font-weight: 300;
-    text-transform: uppercase;
-    line-height: 150%;
-    color: #3D3D3D;
-}
-
 .loft-design__title {
     max-width: 569px;
     margin-bottom: 47px;
@@ -580,7 +572,7 @@
     }
 
     .similar-projects__img img {
-    height: 250px;
+        height: 250px;
     } 
 }
 
@@ -610,10 +602,6 @@
 
     .lozung__description {
         font-size: 16px;
-    }
-
-    .title {
-        font-size: 20px;
     }
 
     .loft-design__title, .efficiency__title {

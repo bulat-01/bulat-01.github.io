@@ -7,7 +7,7 @@
 
 .header {
     position: relative;
-    width:100%;
+    width: 100%;
     font-family: "Roboto Condensed", sans-serif;
     z-index: 1;
     border-bottom: 0.5px solid #878787;
@@ -132,6 +132,14 @@
     color: #878787;
 }
 
+.title {
+    font-size: 30px;
+    font-weight: 300;
+    text-transform: uppercase;
+    line-height: 150%;
+    color: #3D3D3D;
+}
+
 @media (max-width:840px) {
     .menu {
         display:flex;
@@ -140,6 +148,17 @@
     .navigation {
         display: none;
     }
+}
+
+@media (max-width: 830px) {
+    .similar-projects__img:nth-child(3) {
+        display: none;
+     }
+
+     .similar-projects__img img {
+        width: 350px ;
+        height: 324px;
+     }
 }
 
 @media (max-width:768px) {
@@ -226,6 +245,10 @@
 
     .application-arrow {
         top: -3px;
+    }
+
+    .title {
+        font-size: 20px;
     }
 
 }
