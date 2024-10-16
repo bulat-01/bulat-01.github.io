@@ -154,14 +154,14 @@
 }
 
 .tabs__tab {
-    font-weight: 400px;
+    font-weight: 400;
     font-size: 14px;
     line-height: 117%;
     color: #393246;
     letter-spacing: 0.15em;
     text-transform: uppercase;
     text-decoration: unset;
-   
+    text-wrap: nowrap;
 }
 
 .tabs__tab span {
